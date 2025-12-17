@@ -7,7 +7,7 @@ module top(
 
     wire memwrite, clk, reset;
     wire [31:0] pc, instr;
-    wire [31:0] writedata, addr, readdata;
+    wire [31:0] writedata, addr, readdata, MEM_readdata;
     integer counter;
     always @(posedge CLOCK_50)
         counter <= counter + 1;
